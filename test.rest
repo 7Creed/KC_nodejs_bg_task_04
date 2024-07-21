@@ -1,0 +1,42 @@
+POST http://localhost:3000/user/register
+content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjkxY2ZlZmUxYWFjODkxOTBiMDkwOTIiLCJlbWFpbCI6IjRjaGltYWJpa2FAZ21haWwuY29tIiwiaWF0IjoxNzIwODM2NzA3fQ.JukmOoq74wiWMTYqg7U7bugINfRFYJYK9ZVo5Gtb8j0
+
+{
+    "fullName": "star",
+    "email": "abuja@gmail.com",
+    "password": "12000"
+}
+
+###
+POST http://localhost:3000/user/login
+content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjkxY2ZlZmUxYWFjODkxOTBiMDkwOTIiLCJlbWFpbCI6IjRjaGltYWJpa2FAZ21haWwuY29tIiwiaWF0IjoxNzIwODM2NzA3fQ.JukmOoq74wiWMTYqg7U7bugINfRFYJYK9ZVo5Gtb8j0
+
+    # "email": "abuja@gmail.com",
+{
+   "email": "4chimabika@gmail.com",
+    "password": "jkh"
+}
+
+
+###
+POST http://localhost:3000/user/forgot-password
+content-Type: application/json
+
+{
+    "email": "4chimabika@gmail.com"
+}
+
+###
+POST http://localhost:3000/user/reset-password/5c308ea4-dc89-409e-9031-c58672afa618
+content-Type: application/json
+
+{
+    "newPassword": "jkh"
+}
+
+###
+GET http://localhost:3000/user/profile
+content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NjkxY2ZlZmUxYWFjODkxOTBiMDkwOTIiLCJlbWFpbCI6IjRjaGltYWJpa2FAZ21haWwuY29tIiwiaWF0IjoxNzIxNDk2NjU5fQ.Jxxhz-VfSAWIeYakQacqe7hsuXtPByRaOPtrEzi19Cg
